@@ -6,7 +6,7 @@ public class Camioneta extends Vehiculo {
 	private int velocidadMaxima = 90;
 	private String traccion = "4x4";
 	
-	public Camioneta() {cantidadVehiculos++;}
+	public Camioneta() {}
 	
 	public Camioneta(String placa,int puertas, String nombre, int precio, int peso, Fabricante fabricante, boolean volco) {
 		this.setPlaca(placa);
@@ -16,7 +16,6 @@ public class Camioneta extends Vehiculo {
 		this.setPeso(peso);
 		this.setFabricante(fabricante);
 		this.volco = volco;
-		cantidadVehiculos++;
 	}
 	
 	
