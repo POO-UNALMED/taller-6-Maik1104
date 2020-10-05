@@ -4,7 +4,7 @@ public class Camioneta extends Vehiculo {
 	
 	private boolean volco;
 	private int velocidadMaxima = 90;
-	private String traccion = "4x4";
+	private String traccion = "4X4";
 	
 	public Camioneta() {}
 	

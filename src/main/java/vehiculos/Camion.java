@@ -5,7 +5,7 @@ public class Camion extends Vehiculo {
 	private int ejes;
 	private int puertas = 2;
 	private int velocidadMaxima = 80;
-	private String traccion = "4x2";
+	private String traccion = "4X2";
 	
 	public Camion() {}
 	
