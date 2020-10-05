@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Vehiculo {
 
-	List<Vehiculo> vehis= new ArrayList<Vehiculo>();
+	private static List<Vehiculo> vehis= new ArrayList<Vehiculo>();
 	private String placa;
 	private int puertas;
 	private int velocidadMaxima;
@@ -37,7 +37,9 @@ public class Vehiculo {
 	
 		
 	
-	
+	public static String vehiculosPorTipo(){
+		return "Automoviles: " + Automovil.autos.size() + "\n" + "Camionetas: " + Camioneta.camionetas.size() + "\n" + "Camiones: " + Camion.camiones.size(); 
+	}
 	
 	
 	

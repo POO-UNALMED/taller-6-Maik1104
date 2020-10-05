@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Camioneta extends Vehiculo {
 	
-	List<Camioneta> camionetas= new ArrayList<Camioneta>();
+	static List<Camioneta> camionetas= new ArrayList<Camioneta>();
 	private boolean volco;
 	private int velocidadMaxima = 90;
 	private String traccion = "4X4";

@@ -23,5 +23,10 @@ public class Pais {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
+
+	public static String paisMasVendedor() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 }

@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Automovil extends Vehiculo {
 	
-	private static List<Automovil> autos= new ArrayList<Automovil>();
+	static List<Automovil> autos= new ArrayList<Automovil>();
 	private int puestos;
 	private int puertas = 4;
 	private int velocidadMaxima = 100;
