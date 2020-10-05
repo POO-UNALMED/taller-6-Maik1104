@@ -1,12 +1,16 @@
 package vehiculos;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Camioneta extends Vehiculo {
 	
+	List<Camioneta> camionetas= new ArrayList<Camioneta>();
 	private boolean volco;
 	private int velocidadMaxima = 90;
 	private String traccion = "4X4";
 	
-	public Camioneta() {}
+	public Camioneta() {camionetas.add(this);}
 	
 	public Camioneta(String placa,int puertas, String nombre, int precio, int peso, Fabricante fabricante, boolean volco) {
 		this.setPlaca(placa);
@@ -16,6 +20,7 @@ public class Camioneta extends Vehiculo {
 		this.setPeso(peso);
 		this.setFabricante(fabricante);
 		this.volco = volco;
+		camionetas.add(this);
 	}
 	
 	

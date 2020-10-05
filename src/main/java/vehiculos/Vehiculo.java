@@ -1,7 +1,11 @@
 package vehiculos;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Vehiculo {
 
+	List<Vehiculo> vehis= new ArrayList<Vehiculo>();
 	private String placa;
 	private int puertas;
 	private int velocidadMaxima;
@@ -13,7 +17,8 @@ public class Vehiculo {
 	public static int cantidadVehiculos;
 	
 	
-	public Vehiculo() {cantidadVehiculos++;}
+	public Vehiculo() {cantidadVehiculos++;
+	vehis.add(this);}
 	
 	public Vehiculo(String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso,
 			String traccion, Fabricante fabricante) {
@@ -26,6 +31,7 @@ public class Vehiculo {
 		this.traccion = traccion;
 		this.fabricante = fabricante;
 		cantidadVehiculos++;
+		vehis.add(this);
 	}
 
 	
