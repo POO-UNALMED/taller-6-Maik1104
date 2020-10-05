@@ -1,19 +1,35 @@
 package vehiculos;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Fabricante {
 
+	private static List<Fabricante> fab= new ArrayList<Fabricante>();
 	private String nombre;
-	private Pais pais;
+	public Pais pais;
+	public int cantVe;
 	
 	public Fabricante() {}
 	
 	public Fabricante(String nombre, Pais pais) {
 		this.nombre = nombre;
 		this.pais = pais;
+		fab.add(this);
 	}
 	
 	
-	
+	public static Fabricante fabricaMayorventas() {
+		int aux = 0;
+		int p = 0;
+		for (int i=0;i<fab.size();i++) {
+			if (fab.get(i).cantVe>aux) {
+				aux = fab.get(i).cantVe;
+				p = i;
+			}
+		}
+		return fab.get(p);
+	}
 	
 	
 	
