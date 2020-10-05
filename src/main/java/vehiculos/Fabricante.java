@@ -19,7 +19,7 @@ public class Fabricante {
 	}
 	
 	
-	public static Fabricante fabricaMayorventas() {
+	public static Fabricante fabricaMayorVentas() {
 		int aux = 0;
 		int p = 0;
 		for (int i=0;i<fab.size();i++) {
